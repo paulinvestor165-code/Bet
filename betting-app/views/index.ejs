@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Betting App</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Bets</h1>
+  <ul>
+    <% bets.forEach(bet => { %>
+      <li>
+        <%= bet.amount %> - <%= bet.outcome %>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
